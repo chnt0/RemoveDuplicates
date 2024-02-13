@@ -11,6 +11,9 @@ public class RemoveDuplicates {
     * Space complexity: O(n)
     */
     public String removeStringDuplicates(String value){
+        if (value == null) {
+            return "";
+        }
           Set<Character> set = new java.util.HashSet<>();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < value.length(); i++) {
